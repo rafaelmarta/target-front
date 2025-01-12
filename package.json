@@ -10,7 +10,8 @@
     "challenge": "npm run build && node --no-warnings dist/index.js challenge",
     "challenge1": "npm run build && node --no-warnings dist/index.js challenge1",
     "challenge2": "npm run build && node --no-warnings dist/index.js challenge2",
-    "challenge3": "npm run build && node --no-warnings dist/index.js challenge3"
+    "challenge3": "npm run build && node --no-warnings dist/index.js challenge3",
+    "challenge4": "npm run build && node --no-warnings dist/index.js challenge4"
   },
   "author": "Rafael Marta",
   "license": "ISC",
