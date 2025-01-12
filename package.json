@@ -7,9 +7,10 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "challenge": "npm run build && node dist/index.js challenge",
-    "challenge1": "npm run build && node dist/index.js challenge1",
-    "challenge2": "npm run build && node dist/index.js challenge2"
+    "challenge": "npm run build && node --no-warnings dist/index.js challenge",
+    "challenge1": "npm run build && node --no-warnings dist/index.js challenge1",
+    "challenge2": "npm run build && node --no-warnings dist/index.js challenge2",
+    "challenge3": "npm run build && node --no-warnings dist/index.js challenge3"
   },
   "author": "Rafael Marta",
   "license": "ISC",
