@@ -3,6 +3,7 @@ import { challenge2 } from "./challenges/challenge2.js";
 import { challenge3 } from "./challenges/challenge3.js";
 import { challenge4 } from "./challenges/challenge4.js";
 import { challenge5 } from "./challenges/challenge5.js";
+import { getUserInput } from "./utils/userInput.js";
 
 const challengeToExecute = process.argv[2];
 
@@ -14,7 +15,9 @@ switch (challengeToExecute) {
     break;
   case "challenge2":
     console.log("INICIANDO DESAFIO 2:");
-    const numberToValidate = 5;
+    const numberToValidate = parseInt(
+      await getUserInput("Digite um número para verificar a sequência: ")
+    );
     challenge2(numberToValidate);
     console.log("Fim");
     break;
@@ -30,7 +33,9 @@ switch (challengeToExecute) {
     break;
   case "challenge5":
     console.log("INICIANDO DESAFIO 5:");
-    const stringToReverse = "string para inverter";
+    const stringToReverse = await getUserInput(
+      "Digite a string que gostaria de inverter: "
+    );
     challenge5(stringToReverse);
     console.log("Fim");
     break;
