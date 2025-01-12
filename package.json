@@ -1,0 +1,23 @@
+{
+  "name": "target-front",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "challenge": "npm run build && node dist/index.js challenge"
+  },
+  "author": "Rafael Marta",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.4",
+    "@types/lodash": "^4.14.202",
+    "typescript": "^5.3.3"
+  }
+}
